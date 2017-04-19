@@ -15,6 +15,8 @@
     <scala.version>2.10.6</scala.version>
     <scala.maven.plugin.version>3.2.1</scala.maven.plugin.version>
     <spark.streaming.kafka.artifactId>spark-streaming-kafka_2.10</spark.streaming.kafka.artifactId>
+    <elasticsearch.hadoop.artifactId>elasticsearch-hadoop</elasticsearch.hadoop.artifactId>
+    <elasticsearch.hadoop.version>5.3.0</elasticsearch.hadoop.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -44,6 +46,12 @@
       <groupId>org.apache.spark</groupId>
       <artifactId>${spark.streaming.kafka.artifactId}</artifactId>
       <version>${spark.version}</version>
+      <!-- <scope>provided</scope> -->
+    </dependency>
+    <dependency>
+      <groupId>org.elasticsearch</groupId>
+      <artifactId>${elasticsearch.hadoop.artifactId}</artifactId>
+      <version>${elasticsearch.hadoop.version}</version>
       <!-- <scope>provided</scope> -->
     </dependency>
   </dependencies>
